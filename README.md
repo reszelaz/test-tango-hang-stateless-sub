@@ -1,7 +1,7 @@
 # Demonstrate hang of Tango DS with stateless subscription which fails
 
 Examples to reproduce a Tango DS hang when it holds a failing stateless
-subscription. 
+subscription and destroys `AttributeProxy` object.
 
 In order to reproduce the problem:
 1. Register in Tango Database:
