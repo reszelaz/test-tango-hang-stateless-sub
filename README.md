@@ -5,7 +5,10 @@ subscription and destroys `AttributeProxy` object.
 
 In order to reproduce the problem:
 1. Register in Tango Database PyDsExp DS with instance name `test` with 1
-device of PyDsExp class with the following name: `test/pydsexp/1`
+device of PyDsExp class with the following name: `test/pydsexp/1`:
+```
+tango_admin --add-server PyDsExp/test PyDsExp test/pydsexp/1
+```
 2. Start PyDsExp: `python PyDsExp.py test`
 4. Execute client: `python client.py`
 
